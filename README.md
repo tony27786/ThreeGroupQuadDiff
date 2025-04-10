@@ -3,7 +3,7 @@
 
 **Note:** `markers_df_hhc` & `markers_df_hth` are data frames from the `Seurat::FindMarkers` function.
 
-**Important:** Please ensure that you execute Seurat::FindMarkers in the proper sequence. In `Seurat::FindMarkers`, the group specified by ident.1 is treated as the test group, while ident.2 is treated as the reference group.
+**Important:** Please ensure that you execute `Seurat::FindMarkers` in the proper sequence. In `Seurat::FindMarkers`, the group specified by ident.1 is treated as the test group, while ident.2 is treated as the reference group.
 
 **For example,** the disease progression follows the order: `HC → HIV → HIV/MTB`.
 ```r
