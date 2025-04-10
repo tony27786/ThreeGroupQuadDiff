@@ -1,5 +1,5 @@
 # ThreeGroupQuadDiff
-# Main Executable Lines
+## Main Executable Lines
 
 **Note:** `markers_df_hhc` & `markers_df_hth` are data frames from the `Seurat::FindMarkers` function.
 
