@@ -35,5 +35,5 @@ c1 <- common_plot_kegg_results_v5(
 ```
 ### Suggest Citations
 ```r
-print("Please consider cite the packages 'clusterProfiler' used in this repository.")
+print("Please consider cite the package 'clusterProfiler' used in this repository.")
 ```
