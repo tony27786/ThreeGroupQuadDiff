@@ -18,7 +18,7 @@ markers_df_common <- common_de_marker_selection(
   de_list_2 = markers_df_hth,
   suffix_list = c("_hhc", "_hth"),
   xtitle = "LogFC (HIV vs HC)",
-  ytitle = "LogFC (HIV+TB vs HIV)"
+  ytitle = "LogFC (HIV_MTB vs HIV)"
 )
 ```
 ### Step 2: Convert the combined list.
