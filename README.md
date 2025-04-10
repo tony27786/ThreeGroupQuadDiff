@@ -35,7 +35,7 @@ common_enrich <- common_markers_enrichment(converted_common_markers)
 
 ### Step 4: Select the common features of the two datasets.
 ```r
-c1 <- common_plot_kegg_results_v5(
+c1 <- common_plot_kegg_results(
   cd4naive_common_enrich,
   hjust = 1.7,
   title = "KEGG for CD4 Naive in four quadrants"
