@@ -6,7 +6,8 @@
 **Important:** Please ensure that you execute `Seurat::FindMarkers` in the proper sequence. In `Seurat::FindMarkers`, the group specified by ident.1 is treated as the test group, while ident.2 is treated as the reference group.
 
 **For example,** the disease progression follows the order: `HC → HIV → HIV/MTB`.
-Test dataset and code are located in `./data/test_dataset.RData` and `./sample_data.R`, just run the code in sample_data.R then you could get the same plot, just like this repo :)
+
+The test dataset and corresponding script are located in `./data/test_dataset.RData` and `./sample_data.R`, respectively. Simply running sample_data.R will reproduce the exact plot shown in this repository.
 
 ```r
 markers_df_hth <- Seurat::FindMarkers(object = subset_obj, ident.1 = "HIV_MTB", ident.2 = "HIV", assay = "RNA")
