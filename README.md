@@ -22,7 +22,7 @@ markers_df_common <- common_de_marker_selection(
 )
 print(markers_df_common$plot)
 ```
-![My Screenshot](images/pic1.png)
+![pic1](pic1.png)
 
 ### Step 2: Convert the combined list.
 ```r
