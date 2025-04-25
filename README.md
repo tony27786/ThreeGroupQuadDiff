@@ -48,5 +48,5 @@ p1 <- common_plot_kegg_results(
 ![pic2](pic2.png)
 ### Suggest Citations
 ```r
-print("Please consider cite the package 'clusterProfiler' used in this repository.")
+print("Please consider cite the packages 'clusterProfiler' and 'biomaRt' used in this repository.")
 ```
