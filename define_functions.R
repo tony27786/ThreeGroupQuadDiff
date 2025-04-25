@@ -1,9 +1,10 @@
 # Define the functions
 common_de_marker_selection <- function(de_list_1, de_list_2, 
-                                        suffix_list = c("_1", "_2"),
-                                        plot_title = "Common Gene LogFC Distribution among Three Groups", 
-                                        xtitle, 
-                                        ytitle) {
+                                       suffix_list = c("_1", "_2"),
+                                       plot_title = "Common Gene LogFC Distribution among Three Groups", 
+                                       xtitle, 
+                                       ytitle) {
+  library(dplyr)
   de_list_1 <- de_list_1[de_list_1$p_val_adj <= 0.05, ]
   de_list_2 <- de_list_2[de_list_2$p_val_adj <= 0.05, ]
   de_list_1$GeneSymbol <- rownames(de_list_1)
@@ -54,7 +55,7 @@ common_de_marker_selection <- function(de_list_1, de_list_2,
   return(list(common_markers = common_markers, plot = p))
 }
 
-common_de_geneid_converter <- function(common_de_list) {
+common_de_geneid_converter <- function(common_de_list, mart) {
   # Load library
   library(org.Hs.eg.db)
   library(clusterProfiler)
@@ -193,7 +194,7 @@ common_markers_enrichment <- function(common_entrezid_list) {
 }
 
 common_plot_kegg_results <- function(results_list, 
-                                        cases = c("Class_1", "Class_2", "Class_3", "Class_4"), hjust = 1.8, title = "KEGG Enriched Pathways in four quadrants") {
+                                     cases = c("Class_1", "Class_2", "Class_3", "Class_4"), hjust = 1.8, title = "KEGG Enriched Pathways in four quadrants") {
   library(clusterProfiler)
   library(ggplot2)
   library(dplyr)
