@@ -22,7 +22,7 @@ markers_df_common <- common_de_marker_selection(
 )
 print(markers_df_common$plot)
 ```
-![pic1](pic1.png)
+![pic1](images/pic1.png)
 
 ### Step 2: Convert the combined list.
 ```r
@@ -45,7 +45,7 @@ p1 <- common_plot_kegg_results(
   title = "KEGG for CD4 Naive in four quadrants"
 )
 ```
-![pic2](pic2.png)
+![pic2](images/pic2.png)
 ### Suggest Citations
 ```r
 print("Please consider cite the packages 'clusterProfiler' and 'biomaRt' used in this repository.")
