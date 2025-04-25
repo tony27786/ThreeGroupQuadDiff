@@ -15,6 +15,11 @@ markers_df_hhc <- Seurat::FindMarkers(object = subset_obj, ident.1 = "HIV", iden
 The test dataset and corresponding script are located in `./data/test_dataset.RData` and `./sample_data.R`, respectively. Simply running `sample_data.R` will reproduce the exact plot shown in this repository.
 
 ## Main Executable Lines
+### Load the functions
+```r
+source("define_functions.R")
+```
+
 ### Step 1: Select the common features of the two datasets.
 ```r
 markers_df_common <- common_de_marker_selection(
