@@ -20,11 +20,15 @@ markers_df_common <- common_de_marker_selection(
   xtitle = "LogFC (HIV vs HC)",
   ytitle = "LogFC (HIV_MTB vs HIV)"
 )
+print(markers_df_common$plot)
 ```
+![My Screenshot](images/pic1.png)
+
 ### Step 2: Convert the combined list.
 ```r
+mart <- biomaRt::useMart("ensembl", dataset = "hsapiens_gene_ensembl")
 converted_common_markers <- common_de_geneid_converter(
-  common_de_list = markers_df_common$common_markers
+  common_de_list = markers_df_common$common_markers, mart = mart
 )
 ```
 ### Step 3: Enrich the common list using databases.
