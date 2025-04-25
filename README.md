@@ -1,5 +1,5 @@
 # ThreeGroupQuadDiff
-## Main Executable Lines
+## For the beginning
 
 **Note:** `markers_df_hhc` & `markers_df_hth` are dataframes from the `Seurat::FindMarkers` function.
 
@@ -14,6 +14,7 @@ markers_df_hhc <- Seurat::FindMarkers(object = subset_obj, ident.1 = "HIV", iden
 ```
 The test dataset and corresponding script are located in `./data/test_dataset.RData` and `./sample_data.R`, respectively. Simply running `sample_data.R` will reproduce the exact plot shown in this repository.
 
+## Main Executable Lines
 ### Step 1: Select the common features of the two datasets.
 ```r
 markers_df_common <- common_de_marker_selection(
@@ -49,7 +50,7 @@ p1 <- common_plot_kegg_results(
 )
 ```
 ![pic2](images/pic2.png)
-### Suggest Citations
+## Suggest Citations
 ```r
 print("Please consider cite the packages 'clusterProfiler' and 'biomaRt' used in this repository.")
 ```
