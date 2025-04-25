@@ -1,5 +1,5 @@
 # ThreeGroupQuadDiff
-## For The Beginning
+## For the Beginning
 
 **Note:** `markers_df_hhc` & `markers_df_hth` are dataframes from the `Seurat::FindMarkers` function.
 
