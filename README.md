@@ -45,6 +45,7 @@ p1 <- common_plot_kegg_results(
   title = "KEGG for CD4 Naive in four quadrants"
 )
 ```
+![pic2](pic2.png)
 ### Suggest Citations
 ```r
 print("Please consider cite the package 'clusterProfiler' used in this repository.")
