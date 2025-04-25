@@ -1,4 +1,5 @@
-load("~/working/test_dataset.RData")
+load("test_dataset.RData")
+source("define_functions.R")
 markers_df_common <- common_de_marker_selection(
   de_list_1 = markers_df_hhc,
   de_list_2 = markers_df_hth,
