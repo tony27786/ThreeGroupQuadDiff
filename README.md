@@ -54,6 +54,7 @@ p1 <- common_plot_kegg_results(
   hjust = 1.7,
   title = "KEGG for CD4 Naive in four quadrants"
 )
+print(p1)
 ```
 ![pic2](images/pic2.png)
 ## Suggest Citations
