@@ -1,4 +1,5 @@
-load("test_dataset.RData")
+readRDS("data/markers_df_hhc.rds")
+readRDS("data/markers_df_hth.rds")
 source("define_functions.R")
 markers_df_common <- common_de_marker_selection(
   de_list_1 = markers_df_hhc,
