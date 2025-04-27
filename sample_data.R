@@ -1,6 +1,6 @@
 # Read the sample data and functions
-readRDS("data/markers_df_hhc.rds")
-readRDS("data/markers_df_hth.rds")
+markers_df_hhc <- readRDS("data/markers_df_hhc.rds")
+markers_df_hth <- readRDS("data/markers_df_hth.rds")
 source("define_functions.R")
 
 # Main executable lines
