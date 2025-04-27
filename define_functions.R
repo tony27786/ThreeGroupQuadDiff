@@ -36,6 +36,7 @@ common_de_marker_selection <- function(de_list_1, de_list_2,
                   color = class)) +
     geom_point(alpha = 0.6, size = 3) +
     ggrepel::geom_text_repel(aes(label = GeneSymbol),
+                             show.legend = FALSE,
                              size = 3, force = 0.3,
                              max.overlaps = 22,
                              box.padding = 0.2,
