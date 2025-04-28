@@ -9,8 +9,8 @@
 
 
 ```r
-markers_df_hth <- Seurat::FindMarkers(object = subset_obj, ident.1 = "HIV_MTB", ident.2 = "HIV", assay = "RNA")
-markers_df_hhc <- Seurat::FindMarkers(object = subset_obj, ident.1 = "HIV", ident.2 = "HC", assay = "RNA")
+markers_df_hth <- Seurat::FindMarkers(object = seurat_obj, ident.1 = "HIV_MTB", ident.2 = "HIV", assay = "RNA")
+markers_df_hhc <- Seurat::FindMarkers(object = seurat_obj, ident.1 = "HIV", ident.2 = "HC", assay = "RNA")
 ```
 The test dataset and corresponding script are located in `./data/*.rds` and `./sample_data.R`, respectively. Simply running `sample_data.R` will reproduce the exact plot shown in this repository.
 
