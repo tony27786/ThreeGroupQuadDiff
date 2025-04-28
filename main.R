@@ -2,10 +2,19 @@
 source("define_functions.R")
 
 # Step 1: Select the common features of the two datasets.
-markers_df_common <- common_de_marker_selection(de_list_1 = markers_df_hhc, de_list_2 = markers_df_hth, suffix_list = c("_hhc", "_hth"),
-                                                   xtitle = "LogFC (HIV vs HC)", ytitle = "LogFC (HIV+TB vs HIV)")
+markers_df_common <- common_de_marker_selection(
+  de_list_1 = markers_df_hhc,
+  de_list_2 = markers_df_hth,
+  suffix_list = c("_hhc", "_hth"),
+  xtitle = "LogFC (HIV vs HC)",
+  ytitle = "LogFC (HIV_MTB vs HIV)",
+  plot_title = "Common Gene LogFC Distribution among Three Groups"
+)
 # Step 2: Convert the combined list.
-converted_common_markers <- common_de_geneid_converter(common_de_list = markers_df_common$common_markers)
+mart <- biomaRt::useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+converted_common_markers <- common_de_geneid_converter(
+  common_de_list = markers_df_common$common_markers, mart = mart
+)
 # Step 3: Enrich the common list using databases.
 # You might consider integrating additional databases at this stage, such as REACTOME and WikiPathways, among others.
 common_enrich <- common_markers_enrichment(converted_common_markers)
