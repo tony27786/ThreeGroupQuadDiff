@@ -60,5 +60,5 @@ print(p1)
 ## Suggest Citations
 ```r
 print("Please consider cite the packages 'clusterProfiler' and 'biomaRt' used in this repository.")
-print("Please consider cite the article of this repository: https://doi.org/10.3389/fimmu.2025.1680538")
+[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffimmu.2025.1680538-blue)](https://doi.org/10.3389/fimmu.2025.1680538)
 ```
