@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Citation of the associated paper would be highly appreciated if you use this data or code."
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Zhao"
+      given-names: "Zihui"
+    - family-names: "Huang"
+      given-names: "Suyue"
+    - family-names: "Huang"
+      given-names: "Wei"
+    - family-names: "Song"
+      given-names: "Wei"
+    - family-names: "Liu"
+      given-names: "Li"
+    - family-names: "Chen"
+      given-names: "Jun"
+    - family-names: "Zhang"
+      given-names: "Renfang"
+    - family-names: "Shen"
+      given-names: "Yinzhong"
+  title: "Single-cell transcriptomics reveals pathogen interactions and T cell reprogramming in HIV and Mycobacterium tuberculosis co-infection"
+  journal: "Frontiers in Immunology"
+  year: 2025
+  month: 11
+  volume: 16
+  doi: "10.3389/fimmu.2025.1680538"
+  url: "https://doi.org/10.3389/fimmu.2025.1680538"
