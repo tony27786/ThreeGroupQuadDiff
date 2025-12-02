@@ -23,3 +23,4 @@ c1 <- common_plot_kegg_results_v5(cd4naive_common_enrich, hjust = 1.7, title = "
 
 ### Suggest Citations
 print("Please consider cite the packages 'clusterProfiler' used in this repository.")
+print("Please consider cite the article of this repository: https://doi.org/10.3389/fimmu.2025.1680538")
