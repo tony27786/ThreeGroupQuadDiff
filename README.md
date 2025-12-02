@@ -60,6 +60,8 @@ print(p1)
 ![pic2](images/pic2.png)
 ## Suggest Citations
 ```r
-print("Please consider cite the packages 'clusterProfiler' and 'biomaRt' used in this repository.")
+print("Please consider cite the packages 'clusterProfiler' used in this repository.")
 print("If this project contributes to your research, citation of the associated paper would be appreciated.")
+url <- "https://doi.org/10.3389/fimmu.2025.1680538"
+cat("Link to our paper:", url, "\n")
 ```
