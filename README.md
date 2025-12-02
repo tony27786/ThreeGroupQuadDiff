@@ -1,4 +1,5 @@
 # ThreeGroupQuadDiff
+[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffimmu.2025.1680538-blue)](https://doi.org/10.3389/fimmu.2025.1680538)
 ## For the Beginning
 
 **Note:** `markers_df_hhc` & `markers_df_hth` are dataframes from the `Seurat::FindMarkers` function.
@@ -60,5 +61,5 @@ print(p1)
 ## Suggest Citations
 ```r
 print("Please consider cite the packages 'clusterProfiler' and 'biomaRt' used in this repository.")
+print("If this project contributes to your research, citation of the associated paper would be appreciated.")
 ```
-[![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffimmu.2025.1680538-blue)](https://doi.org/10.3389/fimmu.2025.1680538)
